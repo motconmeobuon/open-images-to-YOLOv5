@@ -5,8 +5,6 @@ import argparse
 import pandas as pd
 from tqdm import tqdm
 
-import utils
-
 parser = argparse.ArgumentParser(description='Convert Open Images annotations into YOLOv5 format')
 parser.add_argument('-i', '--images', default=None, required=True, help='path image folder', type=str)
 parser.add_argument('-a', '--annontations', default=None, required=True, help='path annontations box file', type=str)
